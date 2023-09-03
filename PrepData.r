@@ -25,7 +25,7 @@ prep.ss <- function(ss, nn, name)
 }
 
 dat$l6 <- as.numeric(dat$l6 | dat$l1 | dat$l2 | dat$l5 | dat$l13 | dat$l12)
-dat$l3 <- as.numeric(dat$l3 | dat$l6 | dat$l1 | dat$l2 | dat$l5 | dat$l13 | dat$l12 | dat$l14 | dat$l10)
+dat$l3 <- as.numeric(dat$l3 | dat$l6 | dat$l1 | dat$l2 | dat$l5 | dat$l13 | dat$l12 | dat$l14 | dat$l10 | dat$l4)
 dat$l8 <- as.numeric(dat$l8 | dat$l10 | dat$l14)
 dat$l2 <- as.numeric(dat$l2 | dat$l13 | dat$l12)
 dat$l16 <- as.numeric(dat$l16 | dat$l18)
