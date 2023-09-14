@@ -49,3 +49,8 @@ ggboxplot(dat, y = "age", x = "diag_merge", add = "jitter", xlab = "Diagnosis", 
 scale_x_discrete(labels = c("MB", "ATRT", "Other"))
 dev.off()
 
+########################################################################################
+png(file = "age_s0.png", width=5000, height=5000, res=1200)
+ggboxplot(dat[!is.na(dat$s0),], y = "age", x = "s0", add = "jitter", xlab = "Any symptoms", ylab = "Age in months", fill = "light blue", legend = "none") +
+scale_x_discrete(labels = c("Yes", "No"))
+dev.off()
